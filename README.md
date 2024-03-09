@@ -31,8 +31,14 @@ Criação de image
 docker build -t ping .
 ```
 
+*executar container 
+
+spring.profiles.active=dev
+
+
 ```
-docker run -p 8080:8080 ping
+docker run -p -d 8080:8080 -e PROFILE=prd ping
+docker run -p -d 8080:8080 -e PROFILE=prd gubisss/ping (se quiser baixar a sua imagem do docker)
 ```
 
 ```
