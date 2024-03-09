@@ -32,7 +32,7 @@ docker build -t ping .
 ```
 
 ```
-
+docker run -p 8080:8080 ping
 ```
 
 ```
