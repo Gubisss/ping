@@ -29,7 +29,11 @@ Criação de image
 
 ```
 docker build -t ping .
+
 ```
+docker build -t ping-java -f Dockerfile_java .
+
+
 
 *executar container 
 
@@ -37,13 +41,18 @@ spring.profiles.active=dev
 
 
 ```
-docker run -p -d 8080:8080 -e PROFILE=prd ping
-docker run -p -d 8080:8080 -e PROFILE=prd gubisss/ping (se quiser baixar a sua imagem do docker)
+docker run -d -p 8080:8080 -e PROFILE=prd ping
+docker run -d -p 8080:8080 -e PROFILE=prd gubisss/ping (se quiser baixar a sua imagem do docker)
 ```
 
 ```
 docker run -d -p 8080:8080 minhaimagen:tag
 ```
+
+docker exec -it (id) bash
+
+docker run -d -p 9000:8080 -e PROFILE=prd ping-java
+
 
 #### Menu iniciar
 
