@@ -54,6 +54,8 @@ docker exec -it (id) bash
 docker run -d -p 9000:8080 -e PROFILE=prd ping-java
 
 
+docker tag ping gubisss/ping
+
 #### Menu iniciar
 
 > Menu Iniciar: Selecionar e clicar em Aplicação X
